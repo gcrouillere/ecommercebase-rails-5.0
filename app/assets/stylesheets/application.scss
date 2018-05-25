@@ -1,0 +1,45 @@
+// Graphical variables
+@import "config/variables";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'bootstrap-datetimepicker';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "vendor/*";
+
+// Your CSS
+@import "components/*";
+@import "components/lighttheme/*";
+@import "components/default/*";
+@import "components/darktheme/*";
+@import "config/*";
+@import "layout/*";
+@import "pages/*";
+
+.content {
+  min-height: calc(100vh - 90px);
+}
+
+.col-xs-12 {
+  padding: 0px;
+}
+
+.link-404:hover {
+  border-bottom: 1px solid $primary;
+}
+
+.legal {
+  h1, h2, h3, p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    text-align: justify;
+  }
+  h1 {
+    margin-bottom: 30px;
+  }
+}

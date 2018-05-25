@@ -1,0 +1,7 @@
+I"q(function() {
+  jQuery(function() {
+    return $('.attachinary-input').attachinary();
+  });
+
+}).call(this);
+:ET

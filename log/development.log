@@ -1,0 +1,118 @@
+Started GET "/" for 127.0.0.1 at 2018-05-25 09:57:47 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."admin" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["admin", "t"], ["LIMIT", 1]]
+  [1m[36mTheme Load (0.7ms)[0m  [1m[34mSELECT  "themes".* FROM "themes" WHERE "themes"."active" = $1 ORDER BY "themes"."id" ASC LIMIT $2[0m  [["active", "t"], ["LIMIT", 1]]
+  [1m[36mCeramique Load (0.8ms)[0m  [1m[34mSELECT "ceramiques".* FROM "ceramiques"[0m
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/home_darktheme.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2018-05-25 09:57:51 +0200
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (13.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."admin" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["admin", "t"], ["LIMIT", 1]]
+  [1m[36mTheme Load (40.3ms)[0m  [1m[34mSELECT  "themes".* FROM "themes" WHERE "themes"."active" = $1 ORDER BY "themes"."id" ASC LIMIT $2[0m  [["active", "t"], ["LIMIT", 1]]
+  [1m[36mCeramique Load (16.9ms)[0m  [1m[34mSELECT "ceramiques".* FROM "ceramiques"[0m
+  [1m[36mCategory Load (26.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCategory Load (5.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCategory Load (39.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (6.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCategory Load (16.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pages/home_darktheme.html.erb within layouts/application
+  [1m[36mAttachinary::File Load (1.3ms)[0m  [1m[34mSELECT  "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3 ORDER BY "attachinary_files"."id" ASC LIMIT $4[0m  [["attachinariable_id", 1], ["attachinariable_type", "User"], ["scope", "darktheme1photo"], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (1.2ms)[0m  [1m[34mSELECT  "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3 ORDER BY "attachinary_files"."id" ASC LIMIT $4[0m  [["attachinariable_id", 1], ["attachinariable_type", "User"], ["scope", "darktheme1photo"], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (1.6ms)[0m  [1m[34mSELECT  "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3 ORDER BY "attachinary_files"."id" ASC LIMIT $4[0m  [["attachinariable_id", 1], ["attachinariable_type", "User"], ["scope", "darktheme2photo"], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (2.0ms)[0m  [1m[34mSELECT  "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3 ORDER BY "attachinary_files"."id" ASC LIMIT $4[0m  [["attachinariable_id", 1], ["attachinariable_type", "User"], ["scope", "darktheme2photo"], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (2.1ms)[0m  [1m[34mSELECT  "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3 ORDER BY "attachinary_files"."id" ASC LIMIT $4[0m  [["attachinariable_id", 1], ["attachinariable_type", "User"], ["scope", "darktheme3photo"], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (1.7ms)[0m  [1m[34mSELECT  "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3 ORDER BY "attachinary_files"."id" ASC LIMIT $4[0m  [["attachinariable_id", 1], ["attachinariable_type", "User"], ["scope", "darktheme3photo"], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (2.4ms)[0m  [1m[34mSELECT  "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3 ORDER BY "attachinary_files"."id" ASC LIMIT $4[0m  [["attachinariable_id", 1], ["attachinariable_type", "User"], ["scope", "darktheme4photo"], ["LIMIT", 1]]
+  Rendered shared/_darktheme_home_pics.html.erb (48838.2ms)
+  [1m[36mAttachinary::File Load (3.2ms)[0m  [1m[34mSELECT  "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3 ORDER BY "attachinary_files"."id" ASC LIMIT $4[0m  [["attachinariable_id", 1], ["attachinariable_type", "User"], ["scope", "darktheme4photo"], ["LIMIT", 1]]
+  Rendered shared/_darktheme_home_pics.html.erb (45036.5ms)
+  Rendered shared/_photo_update.html.erb (20.0ms)
+  Rendered shared/_photo_update.html.erb (1.2ms)
+  Rendered shared/_photo_update.html.erb (0.2ms)
+  Rendered shared/_photo_update.html.erb (0.2ms)
+  Rendered shared/_photo_update.html.erb (0.2ms)
+  Rendered shared/_photo_update.html.erb (0.1ms)
+  Rendered shared/_photo_update.html.erb (0.3ms)
+  Rendered shared/_photo_update.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."admin" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["admin", "t"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."admin" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["admin", "t"], ["LIMIT", 1]]
+  [1m[36mArticle Load (0.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1 AND "articles"."name" = $2[0m  [["user_id", 1], ["name", "accueil-gauche"]]
+  [1m[36mArticle Load (10.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1 AND "articles"."name" = $2[0m  [["user_id", 1], ["name", "accueil-gauche"]]
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."user_id" = $1 AND "articles"."name" = $2 ORDER BY "articles"."id" ASC LIMIT $3[0m  [["user_id", 1], ["name", "accueil-gauche"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."admin" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["admin", "t"], ["LIMIT", 1]]
+  [1m[36mArticle Load (3.0ms)[0m  [1m[34mSELECT  "articles".* FROM "articles" WHERE "articles"."user_id" = $1 AND "articles"."name" = $2 ORDER BY "articles"."id" ASC LIMIT $3[0m  [["user_id", 1], ["name", "accueil-gauche"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."admin" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["admin", "t"], ["LIMIT", 1]]
+  [1m[36mArticle Load (2.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1 AND "articles"."name" = $2[0m  [["user_id", 1], ["name", "accueil-droit"]]
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = $1 AND "articles"."name" = $2[0m  [["user_id", 1], ["name", "accueil-droit"]]
+  Rendered pages/home_darktheme.html.erb within layouts/application (45138.2ms)
+  Rendered pages/home_darktheme.html.erb within layouts/application (48952.7ms)
+  Rendered shared/_facebookSDK.html.erb (0.4ms)
+  Rendered shared/_facebookSDK.html.erb (0.5ms)
+  Rendered shared/_navbar_darktheme.html.erb (3.0ms)
+  Rendered shared/_navbar_darktheme.html.erb (3.1ms)
+  Rendered shared/_flashes_darktheme.html.erb (0.6ms)
+  Rendered shared/_flashes_darktheme.html.erb (0.6ms)
+  Rendered shared/_footer_darktheme.html.erb (4.2ms)
+  Rendered shared/_footer_darktheme.html.erb (3.7ms)
+Completed 200 OK in 49464ms (Views: 49111.5ms | ActiveRecord: 140.3ms)
+
+
+Completed 200 OK in 45593ms (Views: 45263.8ms | ActiveRecord: 248.5ms)
+
+
+Started GET "/produits" for 127.0.0.1 at 2018-05-25 09:58:40 +0200
+Processing by CeramiquesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."admin" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["admin", "t"], ["LIMIT", 1]]
+  [1m[36mTheme Load (0.4ms)[0m  [1m[34mSELECT  "themes".* FROM "themes" WHERE "themes"."active" = $1 ORDER BY "themes"."id" ASC LIMIT $2[0m  [["active", "t"], ["LIMIT", 1]]
+  [1m[36mCeramique Load (0.3ms)[0m  [1m[34mSELECT "ceramiques".* FROM "ceramiques"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mOffer Load (0.4ms)[0m  [1m[34mSELECT  "offers".* FROM "offers" WHERE "offers"."showcased" = $1 ORDER BY "offers"."id" ASC LIMIT $2[0m  [["showcased", "t"], ["LIMIT", 1]]
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT "ceramiques".* FROM "ceramiques"[0m
+  Rendering ceramiques/index_darktheme.html.erb within layouts/application
+  [1m[36mCeramique Load (0.6ms)[0m  [1m[34mSELECT "ceramiques".* FROM "ceramiques" WHERE "ceramiques"."id" IN (4, 5, 2, 7, 8, 3, 1, 6) ORDER BY "ceramiques"."updated_at" DESC[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (0.4ms)[0m  [1m[34mSELECT "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3[0m  [["attachinariable_id", 8], ["attachinariable_type", "Ceramique"], ["scope", "photos"]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (0.4ms)[0m  [1m[34mSELECT "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3[0m  [["attachinariable_id", 7], ["attachinariable_type", "Ceramique"], ["scope", "photos"]]
+  [1m[36mOffer Load (0.2ms)[0m  [1m[34mSELECT  "offers".* FROM "offers" WHERE "offers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (0.4ms)[0m  [1m[34mSELECT "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3[0m  [["attachinariable_id", 2], ["attachinariable_type", "Ceramique"], ["scope", "photos"]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (0.4ms)[0m  [1m[34mSELECT "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3[0m  [["attachinariable_id", 5], ["attachinariable_type", "Ceramique"], ["scope", "photos"]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (0.3ms)[0m  [1m[34mSELECT "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3[0m  [["attachinariable_id", 4], ["attachinariable_type", "Ceramique"], ["scope", "photos"]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (0.3ms)[0m  [1m[34mSELECT "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3[0m  [["attachinariable_id", 6], ["attachinariable_type", "Ceramique"], ["scope", "photos"]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (0.4ms)[0m  [1m[34mSELECT "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3[0m  [["attachinariable_id", 1], ["attachinariable_type", "Ceramique"], ["scope", "photos"]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "offers".* FROM "offers" WHERE "offers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mAttachinary::File Load (0.3ms)[0m  [1m[34mSELECT "attachinary_files".* FROM "attachinary_files" WHERE "attachinary_files"."attachinariable_id" = $1 AND "attachinary_files"."attachinariable_type" = $2 AND "attachinary_files"."scope" = $3[0m  [["attachinariable_id", 3], ["attachinariable_type", "Ceramique"], ["scope", "photos"]]
+  Rendered shared/_facebookshare.html.erb (0.9ms)
+  Rendered ceramiques/index_darktheme.html.erb within layouts/application (68.9ms)
+  Rendered shared/_facebookSDK.html.erb (0.4ms)
+  Rendered shared/_navbar_darktheme.html.erb (2.4ms)
+  Rendered shared/_flashes_darktheme.html.erb (0.7ms)
+  Rendered shared/_footer_darktheme.html.erb (1.9ms)
+Completed 200 OK in 206ms (Views: 169.3ms | ActiveRecord: 11.8ms)
+
+
